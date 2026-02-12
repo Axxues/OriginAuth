@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Join | Origin Auth</title>
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+    <div class="ambient-light"></div>
+
+    <div class="auth-wrapper">
+        <div class="auth-form-container">
+            <div class="d-flex justify-content-center w-100 stagger-in d-1">
+                <div class="mobile-logo"><i class="bi bi-person-plus-fill"></i></div>
+            </div>
+
+            <div class="text-center text-md-start mb-3 stagger-in d-1">
+                <h4 class="fw-bold mb-1">Join Us</h4>
+                <p class="text-muted small">Create your account.</p>
+            </div>
+
+            <form id="regForm" novalidate>
+                <div class="row g-2 stagger-in d-2">
+                    <div class="col-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="first" placeholder="First" required>
+                            <label for="first">First</label>
+                            <div class="invalid-feedback">Required</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="last" placeholder="Last" required>
+                            <label for="last">Last</label>
+                            <div class="invalid-feedback">Required</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-floating mb-2 stagger-in d-2">
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    <label for="email">Email</label>
+                    <div class="invalid-feedback">Invalid email.</div>
+                </div>
+
+                <div class="form-floating mb-1 stagger-in d-2">
+                    <input type="password" class="form-control has-toggle" id="password" placeholder="Password" required minlength="8">
+                    <label for="password">Password</label>
+                    <div class="password-toggle" id="togglePassword"><i class="bi bi-eye-slash-fill"></i></div>
+                    <div class="invalid-feedback">Min 8 chars.</div>
+                </div>
+                <div class="password-strength mb-3 stagger-in d-2">
+                    <div class="strength-bar" id="strengthBar"></div>
+                </div>
+
+                <div class="form-check mb-3 stagger-in d-3 text-start">
+                    <input class="form-check-input" type="checkbox" id="terms" required>
+                    <label class="form-check-label text-muted small" style="font-size: 0.8rem;" for="terms">
+                        Agree to <a href="#" class="text-decoration-none fw-bold" style="color: var(--primary)">Terms</a>
+                    </label>
+                    <div class="invalid-feedback">You must agree.</div>
+                </div>
+
+                <div class="d-grid mb-3 stagger-in d-3">
+                    <button type="submit" class="btn btn-primary-custom"><span>Get Started</span></button>
+                </div>
+
+                <div class="row g-2 stagger-in d-4">
+                    <div class="col">
+                        <button type="button" class="btn btn-social btn-google w-100 border small py-2 rounded-3">
+                            <i class="bi bi-google"></i>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-social btn-github w-100 border small py-2 rounded-3">
+                            <i class="bi bi-github"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="text-center mt-3 stagger-in d-4">
+                <p class="text-muted small mb-0">Have an account? <a href="login.html" class="text-decoration-none fw-bold" style="color: var(--primary)">Sign in</a></p>
+            </div>
+        </div>
+
+        <div class="auth-visual d-none d-md-flex text-end">
+            <div class="visual-shape s1"></div>
+            <div class="visual-shape s2"></div>
+            <div class="brand w-100 stagger-in d-1">
+                <div class="d-flex align-items-center justify-content-end gap-2 mb-2">
+                    <h6 class="fw-bold m-0">Origin Auth.</h6>
+                    <i class="bi bi-grid-1x2-fill"></i>
+                </div>
+            </div>
+            <div class="quote stagger-in d-2">
+                <h3 class="fw-bold mb-2">Start Building.</h3>
+                <p class="opacity-75 small mb-0">The most efficient way to authenticate.</p>
+            </div>
+            <div class="footer opacity-50 stagger-in d-3" style="font-size: 0.7rem;">&copy; 2026 Zero Bloat UI</div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
